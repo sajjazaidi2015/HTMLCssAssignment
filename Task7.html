@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    <h1>Chapter # 7 - Form</h1>
+    <form action="http://www.example.com/login.php" method="POST">
+        <fieldset>
+            <legend>Your Detail</legend>
+            <p>
+                Name:
+                <input type="text" name="name" maxlenght="30" required size="15"/>
+            </p>
+            <p>
+                Email:
+                <input type="email" name="email" required maxlength="30" size="15"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Your Review</legend>
+            <p>
+                How did you hear about us?
+                <select name="Website">
+                    <option value="google">Google</option>
+                    <option value="Linkedn">Linkedn</option>
+                </select>
+            </p>
+            <p>
+                Would you visit again?
+                <label><input type="radio" name="yes" value="y" checked/>Yes</label>
+                <label><input type="radio" name="no" value="n"/>No</label>
+                <label><input type="radio" name="Maybe" value="maybe"/>Maybe</label>
+            </p>
+            <p>
+                Comment:
+            </p>
+            <textarea name="comments" rows="4" cols="30">Enter your comment</textarea>
+            <p>
+                
+            <input type="checkbox" name="signup" value="sign"/> Sign me up for email update
+            
+            </p>
+
+            <input type="submit"/> 
+        </fieldset>
+    </form>
+</body>
+</html>
